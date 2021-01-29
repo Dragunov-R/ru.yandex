@@ -14,6 +14,7 @@ public class WebDriverSettings {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "/Users/romandragunov/WebDrivers/chromedriver");
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
